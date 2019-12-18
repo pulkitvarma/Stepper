@@ -3,55 +3,55 @@
 1 verbose cli   'C:\\Program Files\\nodejs\\node.exe',
 1 verbose cli   'C:\\Users\\aman1\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js',
 1 verbose cli   'publish',
-1 verbose cli   'pulkitttt'
+1 verbose cli   'testingg'
 1 verbose cli ]
 2 info using npm@3.10.10
 3 info using node@v12.13.1
-4 verbose publish [ 'pulkitttt' ]
-5 silly cache add args [ 'pulkitttt', null ]
-6 verbose cache add spec pulkitttt
+4 verbose publish [ 'testingg' ]
+5 silly cache add args [ 'testingg', null ]
+6 verbose cache add spec testingg
 7 silly cache add parsed spec Result {
-7 silly cache add   raw: 'pulkitttt',
+7 silly cache add   raw: 'testingg',
 7 silly cache add   scope: null,
-7 silly cache add   escapedName: 'pulkitttt',
-7 silly cache add   name: 'pulkitttt',
+7 silly cache add   escapedName: 'testingg',
+7 silly cache add   name: 'testingg',
 7 silly cache add   rawSpec: '',
 7 silly cache add   spec: 'latest',
 7 silly cache add   type: 'tag'
 7 silly cache add }
-8 silly addNamed pulkitttt@latest
-9 verbose addNamed "latest" is being treated as a dist-tag for pulkitttt
-10 info addNameTag [ 'pulkitttt', 'latest' ]
-11 silly mapToRegistry name pulkitttt
+8 silly addNamed testingg@latest
+9 verbose addNamed "latest" is being treated as a dist-tag for testingg
+10 info addNameTag [ 'testingg', 'latest' ]
+11 silly mapToRegistry name testingg
 12 silly mapToRegistry using default registry
 13 silly mapToRegistry registry https://registry.npmjs.org/
 14 silly mapToRegistry data Result {
-14 silly mapToRegistry   raw: 'pulkitttt',
+14 silly mapToRegistry   raw: 'testingg',
 14 silly mapToRegistry   scope: null,
-14 silly mapToRegistry   escapedName: 'pulkitttt',
-14 silly mapToRegistry   name: 'pulkitttt',
+14 silly mapToRegistry   escapedName: 'testingg',
+14 silly mapToRegistry   name: 'testingg',
 14 silly mapToRegistry   rawSpec: '',
 14 silly mapToRegistry   spec: 'latest',
 14 silly mapToRegistry   type: 'tag'
 14 silly mapToRegistry }
-15 silly mapToRegistry uri https://registry.npmjs.org/pulkitttt
-16 verbose addNameTag registry:https://registry.npmjs.org/pulkitttt not in flight; fetching
-17 verbose request uri https://registry.npmjs.org/pulkitttt
+15 silly mapToRegistry uri https://registry.npmjs.org/testingg
+16 verbose addNameTag registry:https://registry.npmjs.org/testingg not in flight; fetching
+17 verbose request uri https://registry.npmjs.org/testingg
 18 verbose request no auth needed
-19 info attempt registry request try #1 at 8:41:05 PM
+19 info attempt registry request try #1 at 11:15:40 AM
 20 verbose request using bearer token for auth
-21 verbose request id a657dc062058d7ae
-22 http request GET https://registry.npmjs.org/pulkitttt
-23 http 404 https://registry.npmjs.org/pulkitttt
+21 verbose request id cecf64c7c52cdae2
+22 http request GET https://registry.npmjs.org/testingg
+23 http 404 https://registry.npmjs.org/testingg
 24 verbose headers {
-24 verbose headers   date: 'Tue, 17 Dec 2019 15:11:07 GMT',
+24 verbose headers   date: 'Wed, 18 Dec 2019 05:45:42 GMT',
 24 verbose headers   'content-type': 'application/json',
 24 verbose headers   'content-length': '21',
 24 verbose headers   connection: 'keep-alive',
 24 verbose headers   'set-cookie': [
-24 verbose headers     '__cfduid=df89badf480b1eae45e4641b32dbef59e1576595466; expires=Thu, 16-Jan-20 15:11:06 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax'
+24 verbose headers     '__cfduid=d9b6ee59a678cf06eb4e316b8a2632be41576647941; expires=Fri, 17-Jan-20 05:45:41 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax'
 24 verbose headers   ],
-24 verbose headers   'cf-ray': '5469d3e43964a988-SIN',
+24 verbose headers   'cf-ray': '546ed5027fbfd9a8-SIN',
 24 verbose headers   vary: 'Accept-Encoding',
 24 verbose headers   'cf-cache-status': 'MISS',
 24 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
@@ -60,21 +60,21 @@
 25 silly get cb [
 25 silly get   404,
 25 silly get   {
-25 silly get     date: 'Tue, 17 Dec 2019 15:11:07 GMT',
+25 silly get     date: 'Wed, 18 Dec 2019 05:45:42 GMT',
 25 silly get     'content-type': 'application/json',
 25 silly get     'content-length': '21',
 25 silly get     connection: 'keep-alive',
 25 silly get     'set-cookie': [
-25 silly get       '__cfduid=df89badf480b1eae45e4641b32dbef59e1576595466; expires=Thu, 16-Jan-20 15:11:06 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax'
+25 silly get       '__cfduid=d9b6ee59a678cf06eb4e316b8a2632be41576647941; expires=Fri, 17-Jan-20 05:45:41 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax'
 25 silly get     ],
-25 silly get     'cf-ray': '5469d3e43964a988-SIN',
+25 silly get     'cf-ray': '546ed5027fbfd9a8-SIN',
 25 silly get     vary: 'Accept-Encoding',
 25 silly get     'cf-cache-status': 'MISS',
 25 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
 25 silly get     server: 'cloudflare'
 25 silly get   }
 25 silly get ]
-26 verbose stack Error: Not found : pulkitttt
+26 verbose stack Error: Not found : testingg
 26 verbose stack     at makeError (C:\Users\aman1\AppData\Roaming\npm\node_modules\npm\node_modules\npm-registry-client\lib\request.js:302:12)
 26 verbose stack     at CachingRegistryClient.<anonymous> (C:\Users\aman1\AppData\Roaming\npm\node_modules\npm\node_modules\npm-registry-client\lib\request.js:290:14)
 26 verbose stack     at Request._callback (C:\Users\aman1\AppData\Roaming\npm\node_modules\npm\node_modules\npm-registry-client\lib\request.js:210:14)
@@ -86,16 +86,16 @@
 26 verbose stack     at IncomingMessage.emit (events.js:215:7)
 26 verbose stack     at endReadableNT (_stream_readable.js:1184:12)
 27 verbose statusCode 404
-28 verbose pkgid pulkitttt
+28 verbose pkgid testingg
 29 verbose cwd C:\Users\aman1\Desktop\Library\Stepper
 30 error Windows_NT 10.0.18363
-31 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Users\\aman1\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js" "publish" "pulkitttt"
+31 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Users\\aman1\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js" "publish" "testingg"
 32 error node v12.13.1
 33 error npm  v3.10.10
 34 error code E404
-35 error 404 Not found : pulkitttt
+35 error 404 Not found : testingg
 36 error 404
-37 error 404 'pulkitttt' is not in the npm registry.
+37 error 404 'testingg' is not in the npm registry.
 38 error 404 You should bug the author to publish it (or use the name yourself!)
 39 error 404 Note that you can also install from a
 40 error 404 tarball, folder, http url, or git url.

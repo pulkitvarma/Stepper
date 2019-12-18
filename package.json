@@ -1,6 +1,6 @@
 {
   "name": "testinggg",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A well designed ReactJs component in-box stepper",
   "main": "lib/Stepper.js",
   "license": "MIT",
