@@ -1,5 +1,5 @@
 {
-  "name": "horizontal-stepper",
+  "name": "testinggg",
   "version": "0.0.1",
   "description": "A well designed ReactJs component in-box stepper",
   "main": "lib/Stepper.js",
@@ -46,5 +46,13 @@
   "directories": {
     "lib": "lib"
   },
-  "author": "Pulkit Varma - varmapulkit63@gmail.com"
+  "author": "Pulkit Varma - varmapulkit63@gmail.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pulkitvarma/Stepper.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pulkitvarma/Stepper/issues"
+  },
+  "homepage": "https://github.com/pulkitvarma/Stepper#readme"
 }
