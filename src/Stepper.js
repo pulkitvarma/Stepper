@@ -57,6 +57,7 @@ class Test extends Component {
   }
 
   componentDidMount = () => {
+    document.getElementsByClassName('stepper-item-inner-active');
     $('.stepper-item-inner-active').parent().addClass('sizeparent');
     $('.stepper-item-inner-active').parent().css('pointer-events', 'auto');
     for (let i = 1; i < this.state.activeStep; i++) {
