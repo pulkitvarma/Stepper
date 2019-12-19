@@ -1,84 +1,92 @@
-import React, { useEffect, useState } from "react";
+import React, { Component } from "react";
 import $ from 'jquery';
 import Stepper from "./Stepper";
 
-function Test(props) {
+class Test extends Component {
+  
+  constructor(props) {
+    super(props);
+    this.state = ({
+      activeStep: 1,
+      completed: 0
+    })
+  }
 
-  const [state, setState] = useState({
-    activeStep: 1,
-    completed: 0
-  })
-
-  const handleOnClickStepper = (step) => {
-    setState({
-      ...state,
+  handleOnClickStepper = (step) => {
+    const completed = this.state.completed;
+    this.setState({
+      completed: completed,
       activeStep: step,
     });
   }
 
-  const handleOnNextClick = () => {
-    let nextStep = state.activeStep + 1;
-    if (nextStep === props.steps.length) {
-      setState({
+  handleOnNextClick = () => {
+    let nextStep = this.state.activeStep + 1;
+    if (nextStep === this.props.steps.length) {
+      this.setState({
         activeStep: nextStep,
-        completed: props.steps.length
+        completed: this.props.steps.length
       })
     }
-    else if (state.activeStep <= state.completed) {
-      setState({
-        ...state,
+    else if (this.state.activeStep <= this.state.completed) {
+      const completed = this.state.completed;
+      this.setState({
+        completed: completed,
         activeStep: nextStep
       })
     }
     else {
-      setState({
+      this.setState({
         activeStep: nextStep,
         completed: nextStep - 1
       })
     }
   }
 
-  const handleFinish = () => {
+  handleFinish = () => {
     console.log('Finished');
   }
 
-  const handleOnClickBack = () => {
-    let prevStep = state.activeStep - 1;
-    setState({
-      ...state,
+  handleOnClickBack = () => {
+    let prevStep = this.state.activeStep - 1;
+    const completed = this.state.completed;
+    this.setState({
+      completed: completed,
       activeStep: prevStep,
     })
   }
 
-  useEffect(() => {
+  componentDidMount = () => {
     $('.stepper-item-inner-active').parent().addClass('sizeparent');
     $('.stepper-item-inner-active').parent().css('pointer-events', 'auto');
-    for (let i = 1; i < state.activeStep; i++) {
+    for (let i = 1; i < this.state.activeStep; i++) {
       $(`.${i}`).addClass('completed');
     }
-    for (let i = 0; i < state.completed; i++) {
+    for (let i = 0; i < this.state.completed; i++) {
       $('.stepper-item-inner').eq(i).addClass('step-completed');
       $('.step-completed').parent().css('pointer-events', 'auto');
     }
-  })
+  }
 
+  render() {
   return (
           <div className="stepper">
             <Stepper
-              steps={props.steps}
-              activeStep={state.activeStep}
-              onSelect={handleOnClickStepper}
+              steps={this.props.steps}
+              activeStep={this.state.activeStep}
+              onSelect={this.handleOnClickStepper}
               showNumber={false} />
             <div className="stepper-body">
-              {props.stepContent(state.activeStep - 1)}
+              {props.stepContent(this.state.activeStep - 1)}
               <div className="buttons" style={{ marginTop: '40px' }}>
-                {state.activeStep === 1 ? <input type="button" disabled className="previous-button" value="Back" onClick={handleOnClickBack} /> : <input type="button" className="previous-button" value="Back" onClick={handleOnClickBack} />}
-                <input type="button" className={state.activeStep === props.steps.length ? "finish-button" : "next-button"} value={state.activeStep === props.steps.length ? 'Finish' : 'Next'}
-                  onClick={state.activeStep === props.steps.length ? handleFinish : handleOnNextClick} />
+                {this.state.activeStep === 1 ? <input type="button" disabled className="previous-button" value="Back" onClick={this.handleOnClickBack} /> : <input type="button" className="previous-button" value="Back" onClick={this.handleOnClickBack} />}
+                <input type="button" className={this.state.activeStep === this.props.steps.length ? "finish-button" : "next-button"} value={this.state.activeStep === this.props.steps.length ? 'Finish' : 'Next'}
+                  onClick={this.state.activeStep === this.props.steps.length ? handleFinish : handleOnNextClick} />
               </div>
             </div>
           </div>
   );
+  }
 }
 
 export default Test;
