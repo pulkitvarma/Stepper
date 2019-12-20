@@ -1,5 +1,5 @@
 {
-  "name": "testinggg",
+  "name": "horizontal-stepper",
   "version": "0.0.2",
   "description": "A well designed ReactJs component in-box stepper",
   "main": "lib/Stepper.js",
@@ -39,7 +39,11 @@
     "react-stepper",
     "react horizontal stepper",
     "horizontal stepper",
-    "horizontal-stepper"
+    "horizontal-stepper",
+    "in-box stepper",
+    "react-horizontal stepper",
+    "react horizontal-stepper",
+    "react-horizontal-stepper"
   ],
   "directories": {
     "lib": "lib"
